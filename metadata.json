@@ -1,0 +1,6 @@
+{
+  "name": "INSERACC_pro",
+  "description": "Plateforme experte en Management de l'Insertion et de l'Accompagnement socioprofessionnel (PLIE, IAE, Missions Locales, CCAS) - Suivi des 9 tables de référence, calculs de KPIs et reporting automatisé.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F243E" />
+      <stop offset="100%" stop-color="#081320" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE89C" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#F3DC87" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA7C11" />
+      <stop offset="25%" stop-color="#F5E08E" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="75%" stop-color="#FFEBB0" />
+      <stop offset="100%" stop-color="#996D07" />
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#FFE685" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="50%" stop-color="#F5ECD7" />
+      <stop offset="100%" stop-color="#EADBBA" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <circle cx="250" cy="250" r="236" fill="#050B12" filter="url(#softShadow)" />
+  <circle cx="250" cy="250" r="230" fill="url(#goldRing)" stroke="#AA7C11" stroke-width="2"/>
+  <circle cx="250" cy="250" r="218" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+  <g opacity="0.85">
+    <line x1="250" y1="265" x2="250" y2="155" stroke="url(#goldGrad)" stroke-width="2.5" />
+    <line x1="250" y1="265" x2="215" y2="165" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="285" y2="165" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="185" y2="180" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="315" y2="180" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="160" y2="205" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="340" y2="205" stroke="url(#goldGrad)" stroke-width="2" />
+    <line x1="250" y1="265" x2="140" y2="235" stroke="url(#goldGrad)" stroke-width="1.8" />
+    <line x1="250" y1="265" x2="360" y2="235" stroke="url(#goldGrad)" stroke-width="1.8" />
+    <line x1="250" y1="265" x2="130" y2="265" stroke="url(#goldGrad)" stroke-width="1.5" />
+    <line x1="250" y1="265" x2="370" y2="265" stroke="url(#goldGrad)" stroke-width="1.5" />
+  </g>
+  <circle cx="250" cy="265" r="38" fill="url(#sunGlow)" opacity="0.6"/>
+  <path d="M 230 265 A 20 20 0 0 1 270 265 Z" fill="#FFFFFF" filter="url(#goldGlow)"/>
+  <path d="M 226 265 A 24 24 0 0 1 274 265 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+  <path d="M 247 265 C 255 285, 235 300, 240 325 C 245 350, 210 375, 140 435 A 218 218 0 0 0 360 435 C 290 375, 255 350, 260 325 C 265 300, 245 285, 253 265 Z" fill="url(#pathGrad)" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M 245 273 Q 250 274 255 273" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M 243 283 Q 250 285 257 283" stroke="#D4AF37" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M 240 295 Q 249 298 259 295" stroke="#D4AF37" stroke-width="1.4" fill="none" opacity="0.7"/>
+  <path d="M 238 310 Q 250 314 263 310" stroke="#D4AF37" stroke-width="1.6" fill="none" opacity="0.7"/>
+  <path d="M 232 330 Q 250 336 270 330" stroke="#D4AF37" stroke-width="1.8" fill="none" opacity="0.8"/>
+  <path d="M 220 355 Q 250 364 282 355" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M 200 385 Q 250 398 304 385" stroke="#D4AF37" stroke-width="2.2" fill="none" opacity="0.85"/>
+  <path d="M 170 418 Q 250 434 332 418" stroke="#D4AF37" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <g id="leftBranch">
+    <path d="M 115 405 Q 125 350 145 285" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 115 385 C 95 380, 85 360, 95 350 C 108 355, 115 370, 118 382 Z" fill="#4B7767" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 125 365 C 135 345, 155 340, 155 355 C 145 365, 135 368, 126 366 Z" fill="#6B9986" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 130 335 C 110 325, 105 305, 115 295 C 128 302, 132 318, 132 332 Z" fill="#4B7767" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 140 310 C 150 290, 170 290, 168 305 C 158 312, 148 312, 140 310 Z" fill="#7FA997" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 145 285 C 135 265, 145 250, 155 255 C 158 265, 152 278, 145 285 Z" fill="#8EBAA8" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <g transform="translate(160, 315)">
+      <circle cx="0" cy="-12" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="5" fill="url(#goldGrad)"/>
+    </g>
+    <g transform="translate(190, 345) scale(0.65)">
+      <circle cx="0" cy="-12" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="5" fill="url(#goldGrad)"/>
+    </g>
+  </g>
+  <g id="rightBranch">
+    <path d="M 385 405 Q 375 350 355 285" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 385 385 C 405 380, 415 360, 405 350 C 392 355, 385 370, 382 382 Z" fill="#4B7767" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 375 365 C 365 345, 345 340, 345 355 C 355 365, 365 368, 374 366 Z" fill="#6B9986" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 370 335 C 390 325, 395 305, 385 295 C 372 302, 368 318, 368 332 Z" fill="#4B7767" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 360 310 C 350 290, 330 290, 332 305 C 342 312, 352 312, 360 310 Z" fill="#7FA997" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <path d="M 355 285 C 365 265, 355 250, 345 255 C 342 265, 348 278, 355 285 Z" fill="#8EBAA8" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <g transform="translate(340, 315)">
+      <circle cx="0" cy="-12" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="5" fill="url(#goldGrad)"/>
+    </g>
+    <g transform="translate(310, 345) scale(0.65)">
+      <circle cx="0" cy="-12" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-7" cy="10" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="-11" cy="-4" r="7" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="5" fill="url(#goldGrad)"/>
+    </g>
+  </g>
+  <path d="M 105 240 C 135 220, 160 175, 205 135 C 225 118, 242 98, 246 92 C 248 88, 250 90, 248 95 C 240 115, 210 145, 175 180 C 150 205, 125 230, 105 240 Z" fill="#0B1A2C" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#goldGlow)" />
+  <path d="M 155 210 C 185 175, 215 140, 240 120 C 243 118, 244 122, 240 126 C 215 150, 180 190, 145 228" fill="none" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M 395 240 C 365 220, 340 175, 295 135 C 275 118, 258 98, 254 92 C 252 88, 250 90, 252 95 C 260 115, 290 145, 325 180 C 350 205, 375 230, 395 240 Z" fill="#0B1A2C" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#goldGlow)" />
+  <path d="M 345 210 C 315 175, 285 140, 260 120 C 257 118, 256 122, 260 126 C 285 150, 320 190, 355 228" fill="none" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="250" cy="90" r="3.5" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="1.5"/>
+</svg>
